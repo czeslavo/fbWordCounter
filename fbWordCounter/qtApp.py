@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import sys
+
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtCore import Qt
 
 from mainWindow_ui import Ui_MainWindow
-from fbWordCounter import FbWordCounter
+from core import FbWordCounter
 
 class Worker(QtCore.QObject):
     finished = QtCore.pyqtSignal()
